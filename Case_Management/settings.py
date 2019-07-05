@@ -25,7 +25,7 @@ SECRET_KEY = '0z-#*&a1!w3a1&m+oj1v3-10xoatdb=jcbx15618=v8qcl3!&e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.74', "https://casemanagementapp.herokuapp.com/ "]
+ALLOWED_HOSTS = ['192.168.0.74', "192.168.0.120" ,"https://casemanagementapp.herokuapp.com/ "]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'manager_login',
     'manager_app',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'Case_Management.urls'
@@ -80,6 +83,23 @@ TEMPLATES = [
         },
     },
 ]
+
+CORS_ORIGIN_WHITELIST = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:4100",
+    "http://127.0.0.1:9000",
+    "http://192.168.0.120:8000",
+]
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
 
 WSGI_APPLICATION = 'Case_Management.wsgi.application'
 
