@@ -33,7 +33,7 @@ class ManagerSignupView(APIView):
         else:
             return Response(manager_signup_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
-
+@permission_classes((AllowAny,))
 class ManagerLoginView(APIView):
     # authentication_classes = SessionAuthentication
     # permission_classes = (IsAuthenticated,)
