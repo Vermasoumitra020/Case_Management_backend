@@ -19,12 +19,13 @@ from django.contrib.auth.models import User
 from manager_app.models import Tasks
 from django.core.serializers.json import DjangoJSONEncoder
 from django.forms.models import model_to_dict
-import jwt
+
 # Create your views here.
 # @api_view(['POST'])
+@permission_classes((AllowAny,))
 class ManagerSignupView(APIView):
     def post(self, request):
-        manager_signup_serializer = ManagerRegistrationSerializers(data = request.data)
+        manager_signup_serializer = ManagerRegistrationSerializers(data = request.data, many=False)
         if manager_signup_serializer.is_valid():
             manager_signup_serializer.save()
 

@@ -30,12 +30,6 @@ class ManagerRegistrationSerializers(serializers.Serializer):
 
         return user
 
-    class Meta:
-        model = Manager
-        fields = ('username', 'email', 'first_name', 'last_name', 'email', 'phone_no', 'password', 'gender', 'category'  ,'password')
-#
-
-
 
 class ManagerLoginSerializers(serializers.Serializer):
     username = serializers.CharField(max_length=250)
