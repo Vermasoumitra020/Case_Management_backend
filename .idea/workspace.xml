@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce24d3b5-ef14-4004-a33f-65556ba20738" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_Management/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case_Management/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_app/migrations/0002_auto_20190701_1756.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_app/migrations/0003_auto_20190702_0724.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_app/migrations/0004_auto_20190702_0724.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_app/migrations/0005_auto_20190705_0756.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0002_auto_20190630_0757.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0003_auto_20190630_0809.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0004_auto_20190630_0811.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0005_auto_20190630_1502.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0006_auto_20190630_1509.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0007_auto_20190630_1509.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0008_auto_20190630_1511.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0009_auto_20190630_1519.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0010_auto_20190630_1531.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0011_auto_20190630_1531.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0012_auto_20190630_1541.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0013_auto_20190701_1206.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager_login/migrations/0014_auto_20190701_1543.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="3" />
-          <entry key="py" value="78" />
+          <entry key="py" value="82" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -54,7 +71,7 @@
         <counts>
           <entry key="HTML" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="78" />
+          <entry key="Python" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -94,11 +111,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager_login/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="170">
               <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager_app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -261,7 +287,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -365,13 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manager_login/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -382,9 +400,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manager_login/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager_login/migrations/0002_auto_20190630_0757.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager_login/migrations/0003_auto_20190630_0809.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/manager_login/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="170">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -392,10 +431,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager_login/serializers.py">
+    <entry file="file://$PROJECT_DIR$/manager_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="338">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager_login/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#49#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
