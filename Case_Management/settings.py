@@ -25,7 +25,7 @@ SECRET_KEY = '0z-#*&a1!w3a1&m+oj1v3-10xoatdb=jcbx15618=v8qcl3!&e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.74', "192.168.0.120" ,"https://casemanagementv1.herokuapp.com"]
+ALLOWED_HOSTS = ['192.168.0.74', "192.168.0.120" ,"casemanagementv1.herokuapp.com"]
 
 
 # Application definition
