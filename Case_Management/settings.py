@@ -85,8 +85,6 @@ TEMPLATES = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://example.com",
-    "https://sub.example.com",
     "http://localhost:4100",
     "http://127.0.0.1:9000",
     "http://192.168.0.120:8000",
