@@ -150,6 +150,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/'
 
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
