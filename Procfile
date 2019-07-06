@@ -1,1 +1,1 @@
-web: gunicorn Case_Management.wsgi
+web: gunicorn djangoherokuapp.wsgi --log-file -
