@@ -38,7 +38,7 @@ class ViewTaskView(APIView):
         return JsonResponse(list(tasks), safe=False)
 
 class DeleteTaskView(APIView):
-    def delete(self, request):
+    def delete(self, request, factory_id):
         id = request.data.get("id")
         obj = Tasks.objects.filter(id = id)
         obj.delete()
@@ -58,4 +58,3 @@ class UpdateTaskView(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-

@@ -27,6 +27,6 @@ urlpatterns = [
     path('create-task/', TaskViews.as_view()),
     path('logout/', views.ManagerLogoutView.as_view()),
     path('view-tasks/', ViewTaskView.as_view()),
-    path('delete/', DeleteTaskView.as_view()),
+    path('delete/(?P<factory_id>[0-9a-f-]+)', DeleteTaskView.as_view()),
     path('update/', UpdateTaskView.as_view())
 ]
