@@ -100,7 +100,7 @@ class ManagerLoginView(APIView):
 class ManagerLogoutView(APIView):
     authentication_classes = (TokenAuthentication,)
     def post(self, request):
-        print(request.user)
+        # trying to logout the user
         request.user.auth_token.delete()
         django_logout(request)
         return Response(status=status.HTTP_204_NO_CONTENT)
