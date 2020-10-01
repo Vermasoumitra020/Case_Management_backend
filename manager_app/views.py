@@ -21,7 +21,6 @@ class TaskViews(APIView):
 
     def post(self, request):
         instance = request.data["work_to"]
-
         taskserializer = TaskSerializers(data = request.data, context={"instance" : instance})
         if taskserializer.is_valid():
             taskserializer.save()
@@ -39,10 +38,13 @@ class ViewTaskView(APIView):
 
 class DeleteTaskView(APIView):
     def delete(self, request, factory_id):
-        id = request.data.get("id")
-        obj = Tasks.objects.filter(id = id)
-        obj.delete()
-        return Response(status=status.HTTP_410_GONE)
+        id = request.data.get("id") if "id" in request.data else None
+        if id:
+            obj = Tasks.objects.filter(id = id)
+            obj.delete()
+            return Response(status=status.HTTP_410_GONE)
+        else:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 class UpdateTaskView(APIView):
