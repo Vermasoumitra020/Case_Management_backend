@@ -6,6 +6,11 @@ from datetime import *
 from django.contrib.auth.models import User
 
 
+class TaskCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Task
+        fields = "__all__"
+
 class TaskSerializers(serializers.Serializer):
     work_to = serializers.UUIDField(format='hex_verbose')
     task_subject = serializers.CharField(max_length=250)
